@@ -9,11 +9,6 @@ int main() {
     file = fopen("input3.txt", "r");
     outFile = fopen("output3.txt", "w");
 
-    if (!file || !outFile) {
-        perror("File error");
-        return 1;
-    }
-
     char line[4096];
     int flag = 1;
     unsigned long long int sum = 0;
